@@ -9,6 +9,10 @@ const PORT = 3000; // Port yang akan digunakan
 // Middleware untuk parsing JSON
 app.use(bodyParser.json());
 
+app.use(express.static("public")); // buat baca suruh isi folder
+
+app.use(express.json());
+
 // Objek untuk menyimpan data absensi
 const absensiData = [];
 
